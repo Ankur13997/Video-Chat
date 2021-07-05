@@ -1,0 +1,202 @@
+body {
+    background-color: #00a7ad;
+background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#create-room {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: auto;
+    text-decoration: none;
+}
+
+#create-room:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+div.form {
+    display: block;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 30%;
+}
+
+#Enter {
+    display: none;
+}
+
+#nav-idd {
+    background-color: red;
+}
+.chat-col {
+    right: 0;
+    bottom: 0;
+    top: 40.5px;
+    z-index: 1000;
+    position: fixed;
+    color: #CDF0EA;
+    padding: 15px 5px 40px 5px;
+    min-height: 100vh;
+}
+
+#chat-messages {
+    height: 70vh;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+#chat-messages::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+}
+
+.chat-box {
+    bottom: 30px;
+    right: 0;
+    position: absolute;
+    border: 0;
+    border-top: 1px groove white;
+    border-left: 1px groove white;
+    font-size: small;
+}
+
+
+.chat-box::placeholder {
+    font-size: small;
+    font-weight: lighter;
+    
+}
+
+.chat-box,
+.chat-box:focus {
+    resize: none !important;
+    box-shadow: none !important;
+}
+
+.chat-row {
+    height: 100%;
+    overflow-x: scroll;
+}
+
+
+.remote-video {
+    position: relative;
+    object-fit: cover !important;
+    height: 300px;
+}
+
+.main {
+    padding-top: 40px;
+}
+
+.local-video {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    height: 100px;
+    width: 200px;
+    z-index: 1000;
+}
+
+
+.sender-info {
+    font-size: smaller;
+    margin-top: 5px;
+    align-self: flex-end;
+}
+
+
+.msg {
+    font-weight: 400;
+    font-size: 12px;
+    color: black;
+    background-color: wheat;
+}
+
+
+.chat-card {
+    border-radius: 6px;
+}
+
+
+.btn-no-effect:focus {
+    box-shadow: none;
+}
+
+.very-small {
+    font-size: 6px !important;
+}
+
+.bg-info {
+    background-color: #247a88!important;
+}
+
+@media only screen and (max-width:767px) {
+    .chat-col {
+        right: -100vw;
+        width: 100vw;
+        z-index: 99999;
+        transition: 0.3s;
+        top: 47px;
+    }
+
+    .chat-col.chat-opened {
+        right: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transition: all 0.3s ease !important;
+        -webkit-transition: all 0.3s ease !important;
+        -moz-transition: all 0.3s ease !important;
+    }
+
+    .chat-opened::-webkit-scrollbar {
+        display: none;
+    }
+
+    .remote-video {
+        height: 200px;
+    }
+
+    .local-video {
+        height: 80px;
+        width: 100px;
+    }
+
+    #chat-messages {
+        height: 60vh;
+    }
+
+    .chat-box {
+        bottom: 90px;
+        margin-bottom: 0px;
+    }
+}
