@@ -29,7 +29,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     
-  deploy: ## <-- this is the new stuff
+  deploy: 
     needs: build
     runs-on: ubuntu-latest
     steps:
