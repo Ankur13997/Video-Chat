@@ -113,4 +113,19 @@ window.addEventListener('load', () => {
             document.querySelector('#err-msg-username').innerHTML = "Please input your name";
         }
     });
+
+    document.addEventListener( 'click', ( e ) => {
+        if ( e.target && e.target.classList.contains( 'expand-remote-video' ) ) {
+            helpers.maximiseStream( e );
+        }
+
+        else if ( e.target && e.target.classList.contains( 'mute-remote-mic' ) ) {
+            helpers.singleStreamToggleMute( e );
+        }
+    } );
+
+
+    document.getElementById( 'closeModal' ).addEventListener( 'click', () => {
+        helpers.toggleModal( 'recording-options-modal', false );
+    } );
 })

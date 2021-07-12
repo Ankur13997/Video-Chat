@@ -31,6 +31,10 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-wood.pn
     text-decoration: none;
 }
 
+
+#room-created {
+    color: white;
+}
 div.form {
     display: block;
     text-align: center;
@@ -60,6 +64,15 @@ form {
     color: #CDF0EA;
     padding: 15px 5px 40px 5px;
     min-height: 100vh;
+}
+
+.chat-col.chat-opened {
+    right: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease !important;
+    -webkit-transition: all 0.3s ease !important;
+    -moz-transition: all 0.3s ease !important;
 }
 
 #chat-messages {

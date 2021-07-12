@@ -26,6 +26,7 @@ window.addEventListener('load', ()=>{
 
         var socketId = '';
         var myStream = '';
+        
 
         socket.on('connect', ()=>{
             //set socketId
