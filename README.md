@@ -9,4 +9,4 @@ This is video-chat application build using WebRTC and Socket.io which has functi
 2) node app.js
 
 # Application link
-https://videochatappe.herokuapp.com/
+https://video-chat-thh3.onrender.com/
